@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usco-Blood - Interpretación de Química Sanguínea</title>
+    <link rel="stylesheet" href="/Archivos Css/style.Css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="/Imagenes/7.jpeg" alt="Logo de Usco-Blood" class="logo">
+            <h1>Usco-Blood</h1>
+        </div>
+    </header>
+    
+    <main>
+        <section class="formulario">
+            <h2>Ingrese sus datos</h2>
+            <form id="bloodForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Seleccione</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                </select>
+
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" required>
+
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" required>
+
+                <label for="glucosa">Glucosa (mg/dL):</label>
+                <input type="number" id="glucosa" name="glucosa" required>
+
+                <label for="colesterol">Colesterol Total (mg/dL):</label>
+                <input type="number" id="colesterol" name="colesterol" required>
+
+                <label for="trigliceridos">Triglicéridos (mg/dL):</label>
+                <input type="number" id="trigliceridos" name="trigliceridos" required>
+                
+                <div id="psa-container" style="display: none;">
+                    <label for="psa">PSA (ng/mL):</label>
+                    <input type="number" id="psa" name="psa">
+                </div>
+
+                <button type="submit">Interpretar Resultados</button>
+            </form>
+        </section>
+        
+        <section class="resultados">
+            <h2>Resultados</h2>
+            <div id="resultadoContainer"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Usco-Blood. Todos los derechos reservados.</p>
+        <p>Contacto con desarrolladores: [Información a completar]</p>
+    </footer>
+    
+    <script src="/Archivos Js/inter_resulta.js"></script>
+</body>
+</html>
